@@ -1,5 +1,6 @@
 main {
   max-width: 1024px;
+  min-width: 452px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   padding-top: 20px;
