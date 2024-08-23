@@ -1,0 +1,110 @@
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 2px;
+  gap: 4px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.grid-row:hover {
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid-item {
+  padding: 12px 20px 12px 5px;
+  background-color: #f5f5f5;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.currentDay-column {
+  background-color: #edf8ff;
+}
+.indicator-column {
+  text-align: left;
+}
+.grid-header {
+  text-align: center;
+}
+
+.yesterday-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.row-button {
+  border: none;
+  display: block;
+}
+
+.green {
+  background-color: #edf7e7;
+  span {
+    color: green;
+    font-weight: 600;
+  }
+}
+.red {
+  background-color: #ffe6e5;
+  span {
+    color: red;
+    font-weight: 600;
+  }
+}
+
+.revenue {
+  padding-left: 20px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
