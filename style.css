@@ -4,7 +4,12 @@ main {
   font-family: "Roboto", sans-serif;
   padding-top: 20px;
 }
-
+.grid-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 2px;
+  gap: 4px;
+}
 .grid-row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
